@@ -1,18 +1,12 @@
-# AWS Lambda Boilerplate for JAVA and Spring IoC
+# AWS Lambda Boilerplate for JAVA, Spring IoC & Hibernate
+
+This repository is in extension to [cagataygurturk](https://github.com/cagataygurturk/aws-lambda-java-boilerplate) work.
 
 Do you miss JAVA, its great features and all Spring framework sugar in AWS Lambda? Use this boilerplate code to author JAVA functions in Lambda and enjoy all features of Spring IoC. It also supports local debugging of JAVA functions.
 
 ## Usage
 
 The code is already documented. **MainHandler** is the main entrance point of your lambda function. **services** package includes Spring Beans. For default, MainHandler fetches **Service** Bean from IoC container but once you have Service instance you can use Autowiring features.
- 
-### Local running
-
-In root folder fire
- 
-```
-mvn compile exec:java
-```
 
 You can configure your IDE to run com.example.lambda.local.LocalRunner as Main Class and com.cagataygurturk.lambda.MainHandler as program argument to debug locally your function.
 
